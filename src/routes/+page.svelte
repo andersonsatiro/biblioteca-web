@@ -4,6 +4,6 @@
     import Footer from './Footer.svelte'
 </script>
 
-<Header />
+<Header parametro={101} />
 <Main />
 <Footer />

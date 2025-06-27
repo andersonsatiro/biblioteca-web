@@ -1,6 +1,10 @@
+<script lang="ts">
+    export let parametro: number;
+</script>
+
 <header>
     <div>
-        <p>left</p>
+        <p>o numero é {parametro}</p>
     </div>
 
     <div>
