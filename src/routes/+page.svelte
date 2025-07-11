@@ -1,9 +1,8 @@
 <script>
-    import Header from './Header.svelte'
-    import Main from './Main.svelte'
-    import Footer from './Footer.svelte'
+
+	import Main from "$lib/components/Main.svelte";
+
 </script>
 
-<Header parametro={101} />
-<Main />
-<Footer />
+
+<Main></Main>
