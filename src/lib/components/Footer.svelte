@@ -2,7 +2,8 @@
   import { Instagram, Github, Twitter } from 'lucide-svelte'
 </script>
 
-<footer>
+<footer class="flex flex-col justify-center items-center px-20 py-32">
+    
     <section>
         <h2>Assine nossa Newsletter</h2>
         
@@ -37,10 +38,3 @@
         </div>
     </div>
 </footer>
-
-<style>
-    footer {
-        display: flex;
-        background: rgb(255, 255, 150);
-    }
-</style>
