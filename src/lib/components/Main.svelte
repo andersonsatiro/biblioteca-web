@@ -1,21 +1,7 @@
-<main>
-    <div>
-        <p>left</p>
-    </div>
+<script>
+	import Destaques from "./Destaques.svelte";
 
-    <div>
-        <p>center</p>
-    </div>
-
-    <div>
-        <p>right</p>
-    </div>
+</script>
+<main class="flex items-center justify-center">
+    <Destaques />
 </main>
-
-<style>
-    main {
-        display: flex;
-        flex-grow: 1;
-        background: blue;
-    }
-</style>

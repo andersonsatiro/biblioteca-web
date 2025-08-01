@@ -38,7 +38,7 @@
             <p>Titulo do menu scroll</p>
             <ul class="menu-scroll"></ul>
                 {#each lista as livro}
-                <img width="150px" src="{livro.imagem}" alt="{livro.titulo}">
+                <img width="150px" src={livro.imagem} alt={livro.titulo}>
                 {/each}
         </section>
 
@@ -46,7 +46,7 @@
             <p>Titulo do menu scroll</p>
             <ul class="menu-scroll">
                 <li>
-                    <img class="livro-capa" src="https://i.pinimg.com/736x/93/5a/68/935a68b042d6b5233cb048b15714bb53.jpg" alt="">
+                    <img class="livro-capa" src="https://i.pinimg.com/736x/93/5a/68/935a68b042d6b5233cb048b15714bb53.jpg" alt="Teste">
                     <p class="livro-titulo">Título do Livro</p>
                     <p class="livro-autor">Autor do Livro</p>
                 </li>
