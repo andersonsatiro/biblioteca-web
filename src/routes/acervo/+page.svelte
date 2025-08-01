@@ -27,23 +27,18 @@
             genero:["distopia", "romance"],
             autor: "Aldous Huxley",
             imagem: "https://i.pinimg.com/1200x/9d/73/6c/9d736c2ea62e9e8abe062c2a5059d17c.jpg"
-        },
-        {
-            id: 3,
-            titulo: "Admirável Mundo Novo",
-            genero:["distopia", "romance"],
-            autor: "Aldous Huxley",
         }
     ]
 </script>
 
-<main >
+<main>
         <!-- menu scroll -->
         <section> 
+            
             <p>Titulo do menu scroll</p>
             <ul class="menu-scroll"></ul>
                 {#each lista as livro}
-                <img width="150px" src="livro.imagem" alt="livro.titulo">
+                <img width="150px" src="{livro.imagem}" alt="{livro.titulo}">
                 {/each}
         </section>
 
