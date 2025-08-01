@@ -13,11 +13,11 @@
                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#3563E9] transition-all duration-300 group-hover:w-full"></span>
             </li>
             <li class="relative group cursor-pointer">
-                <span class="group-hover:text-[#3563E9] transition-colors duration-300">Acervo</span>
+                <a href="/acervo" class="group-hover:text-[#3563E9] transition-colors duration-300">Acervo</a>
                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#3563E9] transition-all duration-300 group-hover:w-full"></span>
             </li>
             <li class="relative group cursor-pointer">
-                <span class="group-hover:text-[#3563E9] transition-colors duration-300">Mais vendidos</span>
+                <a href="/mais-vendidos" class="group-hover:text-[#3563E9] transition-colors duration-300">Mais vendidos</a>
                 <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#3563E9] transition-all duration-300 group-hover:w-full"></span>
             </li>
             <li class="relative group cursor-pointer">
