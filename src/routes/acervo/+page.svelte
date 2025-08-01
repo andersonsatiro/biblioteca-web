@@ -36,13 +36,20 @@
         <section> 
             
             <p>Titulo do menu scroll</p>
-            <ul class="menu-scroll"></ul>
+            <ul style="list-style-type: square" class="menu-scroll"></ul>
                 {#each lista as livro}
-                <img width="150px" src={livro.imagem} alt={livro.titulo}>
+                <li>
+                    <div>
+                        <img width="150px" src={livro.imagem} alt={livro.titulo}>
+                        {livro.titulo}
+                        <br>
+                        {livro.autor}
+                    </div>
+                </li>
                 {/each}
         </section>
 
-        <section>
+        <!-- <section>
             <p>Titulo do menu scroll</p>
             <ul class="menu-scroll">
                 <li>
@@ -81,53 +88,7 @@
                     <p class="livro-autor">Autor do Livro</p>
                 </li>
             </ul>
-        </section>
-
-        <section>
-            <p>Titulo do menu scroll</p>
-            <ul class="menu-scroll">
-                <li>
-                    <img class="livro-capa" src="https://i.pinimg.com/736x/88/91/2c/88912cd973df21c2ba1d72c258eb080b.jpg" alt="">
-                    <p class="livro-titulo">Título do Livro</p>
-                    <p class="livro-autor">Autor do Livro</p>
-                </li>
-                <li>
-                    <img class="livro-capa" src="https://i.pinimg.com/736x/88/91/2c/88912cd973df21c2ba1d72c258eb080b.jpg" alt="">
-                    <p class="livro-titulo">Título do Livro</p>
-                    <p class="livro-autor">Autor do Livro</p>
-                </li>
-                <li>
-                    <img class="livro-capa" src="https://i.pinimg.com/736x/88/91/2c/88912cd973df21c2ba1d72c258eb080b.jpg" alt="">
-                    <p class="livro-titulo">Título do Livro</p>
-                    <p class="livro-autor">Autor do Livro</p>
-                </li>
-                <li>
-                    <img class="livro-capa" src="https://i.pinimg.com/736x/88/91/2c/88912cd973df21c2ba1d72c258eb080b.jpg" alt="">
-                    <p class="livro-titulo">Título do Livro</p>
-                    <p class="livro-autor">Autor do Livro</p>
-                </li>
-                <li>
-                    <img class="livro-capa" src="https://i.pinimg.com/736x/88/91/2c/88912cd973df21c2ba1d72c258eb080b.jpg" alt="">
-                    <p class="livro-titulo">Título do Livro</p>
-                    <p class="livro-autor">Autor do Livro</p>
-                </li>
-                <li>
-                    <img class="livro-capa" src="https://i.pinimg.com/736x/88/91/2c/88912cd973df21c2ba1d72c258eb080b.jpg" alt="">
-                    <p class="livro-titulo">Título do Livro</p>
-                    <p class="livro-autor">Autor do Livro</p>
-                </li>
-                <li>
-                    <img class="livro-capa" src="https://i.pinimg.com/736x/88/91/2c/88912cd973df21c2ba1d72c258eb080b.jpg" alt="">
-                    <p class="livro-titulo">Título do Livro</p>
-                    <p class="livro-autor">Autor do Livro</p>
-                </li>
-                <li>
-                    <img class="livro-capa" src="https://i.pinimg.com/736x/88/91/2c/88912cd973df21c2ba1d72c258eb080b.jpg" alt="">
-                    <p class="livro-titulo">Título do Livro</p>
-                    <p class="livro-autor">Autor do Livro</p>
-                </li>
-            </ul>
-        </section>
+        </section> -->
     </main>
 
 <style>
@@ -145,6 +106,7 @@
         flex-direction: column;
         align-items: center;
         margin: 0 16px;
+        list-style-type: none;
     }
 
     .menu-scroll {
