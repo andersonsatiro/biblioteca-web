@@ -91,14 +91,13 @@
         <!-- menu scroll -->
         <section class="menu-scroll"> 
             <p>TITULO SEÇÃO</p>
-            <ul style="list-style-type: square" class="scroll">
+            <ul class="scroll">
                 {#each lista as livro}
                 <li>
-                    <div>
-                        <img width="150px" src={livro.imagem} alt={livro.titulo}>
-                        {livro.titulo}
-                        <br>
-                        {livro.autor}
+                    <img class="scroll-capa-livro" width="150px" src={livro.imagem} alt={livro.titulo}>
+                    <div class="scroll-capa-informacao">
+                        <a href="">{livro.titulo}</a>
+                        <a href="">{livro.autor}</a>
                     </div>
                 </li>
                 {/each}
@@ -122,7 +121,6 @@
         flex-direction: column;
         align-items: center;
         margin: 0 16px;
-        list-style-type: none;
     }
 
     .scroll {
@@ -135,11 +133,19 @@
         list-style-type: none;
     }
 
-    .livro-capa {
-        height: 160px;
-        width: 100px;
-        object-fit: cover;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        margin-bottom: 8px;
+    .scroll-capa-informacao * {
+        display: flex;
+        width: fit-content;
+        margin: auto;
     }
+
+    /* css seria muito melhor e mais organizado se funcionasse assim.
+    .scroll-capa-informacao {
+        * {
+            display: flex;
+            width: fit-content;
+            margin: auto;
+        }
+    } */
+
 </style>
