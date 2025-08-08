@@ -90,7 +90,7 @@
 <main>
         <!-- menu scroll -->
         <section class="menu-scroll"> 
-            <p>TITULO SEÇÃO</p>
+            <p class="scroll-titulo">TITULO SEÇÃO</p>
             <ul class="scroll">
                 {#each lista as livro}
                 <li>
@@ -148,8 +148,8 @@
         display: flex;
         width: fit-content;
         margin: auto;
-    }
-            
+    } 
+
     ::-webkit-scrollbar {
         width: 0px;
     }
