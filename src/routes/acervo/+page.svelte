@@ -94,7 +94,7 @@
             <ul class="scroll">
                 {#each lista as livro}
                 <li>
-                    <img class="scroll-capa-livro" width="150px" src={livro.imagem} alt={livro.titulo}>
+                    <a href=""><img class="scroll-capa-livro" width="150px" src={livro.imagem} alt={livro.titulo}></a>
                     <div class="scroll-capa-informacao">
                         <a href="">{livro.titulo}</a>
                         <a href="">{livro.autor}</a>
@@ -121,9 +121,20 @@
         flex-direction: column;
         align-items: center;
         margin: 0 16px;
+        padding-top: 30px;
+
+        img {
+            width: 140px;
+            height: 200px;
+            border-radius: 10px;
+        }
     }
 
     .scroll {
+        border: 1px solid whitesmoke;
+        background-color: white;
+        box-shadow: inset 0 0 20px rgb(244, 244, 244);
+        border-radius: 30px;
         width: 80vw;
         overflow: scroll;
         display: flex;
@@ -138,14 +149,9 @@
         width: fit-content;
         margin: auto;
     }
-
-    /* css seria muito melhor e mais organizado se funcionasse assim.
-    .scroll-capa-informacao {
-        * {
-            display: flex;
-            width: fit-content;
-            margin: auto;
-        }
-    } */
+            
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
 
 </style>
